@@ -1,0 +1,6 @@
+{
+  "name": "Aura Wood Furniture",
+  "description": "Premium Handcrafted Wood Furniture. Custom dining tables, luxury beds, wardrobes, and bespoke wooden items handcrafted with exceptional artisanship. Order today via Call or WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
