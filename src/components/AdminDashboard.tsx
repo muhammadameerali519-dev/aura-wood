@@ -19,7 +19,7 @@ export default function AdminDashboard({ onClose }: AdminDashboardProps) {
   const [filterStatus, setFilterStatus] = useState<string>('All');
   const [statusUpdatingId, setStatusUpdatingId] = useState<string | null>(null);
 
-  const correctPasscode = 'aura123';
+  const correctPasscode = 'aurawood786';
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -45,7 +45,7 @@ export default function AdminDashboard({ onClose }: AdminDashboardProps) {
       setIsAuthenticated(true);
       setPassError('');
     } else {
-      setPassError('Incorrect passcode. For testing, please use: aura123');
+      setPassError('Incorrect passcode. Please enter the correct woodshop owner passcode.');
     }
   };
 
@@ -149,13 +149,6 @@ export default function AdminDashboard({ onClose }: AdminDashboardProps) {
                 {passError}
               </div>
             )}
-
-            <div className="bg-brand-bg border border-brand-border/60 rounded-2xl p-4 text-[11px] text-brand-accent leading-relaxed font-sans flex gap-2">
-              <AlertTriangle className="w-4 h-4 shrink-0 text-brand-accent mt-0.5" />
-              <span>
-                <strong>Testing credentials:</strong> Input <strong>aura123</strong> to enter. Real-time Firebase Firestore integration handles database queries.
-              </span>
-            </div>
 
             <div className="flex gap-4">
               <button
